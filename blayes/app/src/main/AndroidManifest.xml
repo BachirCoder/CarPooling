@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.bachir.owner.blayes">
+    xmlns:tools="http://schemas.android.com/tools"
+    <uses-sdk tools:overrideLibrary="com.firebase.ui.auth, android.support.customtabs"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".TripList"
+            android:label="blayes"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddTrip"
+            android:label="Proposer un trajet"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!--
+ ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".DetailActivity"
+            android:label="Détails"
+            android:parentActivityName=".TripList"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="OPEN_NOTIFICATION" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bachir.owner.blayes.TripList" />
+        </activity>
+        <activity
+            android:name=".EditTrip"
+            android:label="Modifier"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".login.LoginActivity" />
+        <activity
+            android:name=".login.CreateAccountActivity"
+            android:label="Créer un compte"
+            android:parentActivityName=".login.LoginActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bachir.owner.blayes.login.LoginActivity" />
+        </activity>
+
+        <service
+            android:name=".MyFirebaseInstanceIDService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".NotificationService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".About"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Contact"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Book"
+            android:label="Réservez votre place"
+            android:parentActivityName=".DetailActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bachir.owner.blayes.DetailActivity" />
+        </activity>
+        <activity android:name=".Starter">
+
+        </activity>
+
+        <activity
+            android:name=".Search"
+            android:label="Cherecher un trajet"></activity>
+        <activity android:name=".login.PassReset"></activity>
+    </application>
+
+</manifest>

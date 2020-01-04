@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".com.bachir.owner.blayes.MainActivityFragment">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list"
+        android:paddingTop="?attr/actionBarSize"
+        android:padding="0dp"
+        tools:context=".MainActivityFragment"
+        >
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:id="@+id/appBarMain"
+            android:layout_height="?attr/actionBarSize"
+            android:fitsSystemWindows="true"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                app:contentInsetLeft="10dp"
+                android:contentInsetLeft="10dp"
+                app:contentInsetStart="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                android:background="#564365"
+                app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"
+                    />
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="9dip"
+                    android:gravity="bottom"
+                    android:text="layes"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <RelativeLayout
+            android:id="@+id/loadingPanel"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F4F0EE"
+            android:gravity="center" >
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true" />
+        </RelativeLayout>
+
+        <TextView android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Aucun voyage trouvé."
+            android:padding="20dp"
+            android:textSize="19sp"
+            android:visibility="gone"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:background="#F4F0EE"
+            android:id="@+id/trips" />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rv"
+            android:background="#F4F0EE"        />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

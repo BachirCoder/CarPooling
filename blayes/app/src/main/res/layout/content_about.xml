@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="0dp"
+    android:background="@android:color/white"
+    android:layout_marginTop="?attr/actionBarSize"
+    tools:context="com.bachir.owner.blayes.About"
+    tools:showIn="@layout/activity_about"
+    android:orientation="vertical">
+
+    <ScrollView android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true" >
+
+        <LinearLayout android:id="@+id/scroll_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+        <!-- Name Label -->
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="À propos"
+            android:gravity="center"
+            android:padding="0dp"
+            android:textSize="25sp"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+        <!-- Name Label -->
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="Blayes est une application de covoiturage pour les courts, moyennes et longues distances qui met en contact les conducteurs et les passagers souhaitant partager les frais d'un même trajet de ville en ville, en Algérie. Ainsi que d'autres types de déplacements courts, réguliers ou ponctuels.
+Les conducteurs publient gratuitement leurs trajets et les passagers peuvent obtenir un choix en fonction de leurs besoins (nom du conducteur, nombre de places disponible, heure de départ...) grâce à un système rapide, souple et efficace."
+            android:gravity="fill_horizontal"
+            android:padding="10dp"
+            android:textSize="17sp"
+            android:textColor="#000000" />
+
+
+    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

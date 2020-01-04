@@ -1,0 +1,41 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.bachir.owner.blayes.AddTrip">
+
+    <item
+        android:id="@+id/action_home"
+        android:orderInCategory="105"
+        android:title="Je suis un passager"
+        android:visible="true"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_contact"
+        android:orderInCategory="105"
+        android:title="Contactez-nous"
+        android:visible="true"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="105"
+        android:title="À propos"
+        android:visible="true"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="110"
+        android:title="Déconnexion"
+        android:visible="true"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_exit"
+        android:orderInCategory="115"
+        android:title="Quitter"
+        android:visible="true"
+        app:showAsAction="never" />
+
+</menu>

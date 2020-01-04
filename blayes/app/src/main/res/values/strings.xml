@@ -1,0 +1,114 @@
+<resources>
+    <string name="app_name">blayes</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_detail">DetailActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+
+
+    <!-- Base Error Strings-->
+    <string name="log_error_updating_data">Error updating data: </string>
+    <string name="log_error_the_read_failed">The read failed: </string>
+    <string name="log_error_occurred">"Error occurred: "</string>
+    <string name="connection_error">"Vérifier votre connexion Internet!"</string>
+    <string name="account_created">"Votre nouveau compte a été créé avec succès."</string>
+    <string name="account_fail">"La création d'un nouveau compte a échoué!"</string>
+
+
+    <!-- Menu Strings -->
+    <string name="action_logout">Logout</string>
+    <string name="action_share_list">Share</string>
+    <string name="action_sort">Sort</string>
+    <string name="action_remove_list">Remove</string>
+    <string name="action_archive">Archive</string>
+
+    <!-- Menu Items -->
+    <string name="action_edit_list_name">Edit</string>
+
+    <!-- Edit List and Add Item Dialogs -->
+    <string name="positive_button_add_list_item">Add item</string>
+    <string name="positive_button_edit_item">Edit name</string>
+    <string name="negative_button_cancel">Annuler</string>
+    <string name="dialog_message_are_you_sure_remove_list">Êtes-vous certain de vouloir supprimer cette annonce?</string>
+    <string name="title_activity_edit_trip">Edit</string>
+
+    <!--
+
+     == Login and Create Account Strings ==
+
+      -->
+    <!-- Activity Titles  -->
+    <string name="title_activity_create_account">Create Account</string>
+
+    <!-- Login and Create Account Screen  -->
+    <string name="text_dont_have_account">Don\'t have an account?</string>
+    <string name="text_already_have_account">Already have an account?</string>
+    <string name="button_create_account">Sign Up</string>
+    <string name="button_sign_in">Sign In</string>
+    <string name="button_signin_with_google">SIGN IN WITH GOOGLE</string>
+    <string name="button_signin_with_password">SIGN IN</string>
+    <string name="hint_enter_email">Enter your email</string>
+    <string name="hint_enter_username">Enter your name</string>
+    <string name="hint_enter_password">Enter password</string>
+    <string name="image_view_logo_image">Logo Image</string>
+
+
+    <!-- Instructions and Loading Text -->
+    <string name="progress_dialog_loading">Loading�</string>
+    <string name="progress_dialog_authenticating_with_firebase">Authenticating with Firebase�</string>
+    <string name="progress_dialog_creating_user_with_firebase">Attempting to create account�</string>
+    <string name="progress_dialog_check_inbox">Please check your inbox for your password</string>
+
+    <!-- Errors -->
+    <string name="dialog_title_error">Error</string>
+    <string name="error_message_failed_sign_in_no_network">There was a problem with the network connection.\nAre you sure you\'re connected to the internet?</string>
+    <string name="log_error_invalid_provider">"Invalid provider: "</string>
+    <string name="log_error_failed_to_change_password">"Failed to change the password: "</string>
+    <string name="error_invalid_email_not_valid">Ceci n\'est pas un e-mail valide.</string>
+    <string name="error_message_email_issue">Une erreur s\'est produite avec votre e-mail; Vérifiez que vous l\'avez entré correctement.</string>
+    <string name="error_you_didnt_give_permissions">You must give ShoppingList++ permission to access your Google account information if you want to use Google sign-in.</string>
+    <string name="error_email_taken">Cet e-mail est déjà pris.</string>
+    <string name="error_invalid_password_not_valid">Entrez un mot de passe d\'au moins 6 caractères.</string>
+    <string name="error_cannot_be_empty">Cela ne peut pas être vide.</string>
+    <string name="error_cannot_post">Votre compte a été désactivé. Pour activer votre compte contactez-nous sur: blayes.dev@gmail.com</string>
+    <string name="error_account">Il y a un problème avec votre compte. Contactez-nous sur: blayes.dev@gmail.com</string>
+
+    <!-- Google Errors -->
+    <string name="google_error_recoverable_oauth_error">"Recoverable Google OAuth error: "</string>
+    <string name="google_error_google_play_services_not_available">Google Play Services are not available.</string>
+    <string name="google_error_trying_to_connect_google_api">Trying to connect to Google API</string>
+    <string name="google_error_auth_with_google">"Error authenticating with Google: "</string>
+    <string name="google_error_network_error">"Network error: "</string>
+    <string name="google_error_cant_connect_to_api">Are you sure that you set up a project for your app?
+        Check out : https://console.developers.google.com/project. Also make sure you have all the proper
+    gradle dependencies</string>
+
+
+    <!-- OAuth Format -->
+    <string name="oauth2_format">oauth2:%s</string>
+
+    <!-- Log Messages -->
+    <string name="log_message_password_changed_successfully">Password changed successfully from temporary password to </string>
+    <string name="log_message_auth_successful">auth successful.</string>
+    <string name="title_activity_about">About</string>
+    <string name="title_activity_contact">Contact</string>
+    <string name="title_activity_book">Book</string>
+
+    <!-- Log Messages -->
+    <string name="service_not_available">Network or other I/O problems.</string>
+    <string name="invalid_lat_long_used">Invalid latitude or longitude values.</string>
+
+    <string name="sign_in_cancelled">Sign in cancelled</string>
+    <string name="no_internet_connection">No Internet connection</string>
+    <string name="unknown_error">Unknown error</string>
+    <string name="sign_out_failed">Sign out failed</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="delete">Delete</string>
+    <string name="delete_account_failed">Delete account failed</string>
+    <string name="unknown_sign_in_response">Unknown sign in response</string>
+    <string name="sign_in_with_phone">Se connecter</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

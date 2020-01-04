@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:background="@android:color/white"
+    android:layout_marginTop="?attr/actionBarSize"
+    tools:context="com.bachir.owner.blayes.Contact"
+    tools:showIn="@layout/activity_contact"
+    android:orientation="vertical">
+
+    <ScrollView android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true" >
+
+        <LinearLayout android:id="@+id/scroll_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal" >
+        <!-- Name Label -->
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="Contactez-nous"
+            android:gravity="center"
+            android:padding="0dp"
+            android:textSize="25sp"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:orientation="horizontal" >
+
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="Sujet:"
+            android:padding="13dip"
+            android:textSize="15sp"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <!-- Input description -->
+        <EditText android:id="@+id/sujet"
+            android:layout_width="fill_parent"
+            android:layout_height="30dip"
+            android:paddingLeft="10dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginLeft="15dip"
+            android:lines="1"
+            android:gravity="top"
+            android:autoText="true"
+            android:textColor="#000000"
+            android:inputType="textCapSentences"
+            android:background="@color/grey" />
+    </LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:orientation="horizontal" >
+
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="Message:"
+        android:padding="13dip"
+        android:textSize="15sp"
+        android:textColor="#000000" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <!-- Input description -->
+        <EditText android:id="@+id/message"
+            android:layout_width="fill_parent"
+            android:layout_height="160dip"
+            android:inputType="textCapSentences"
+            android:paddingLeft="10dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginLeft="15dip"
+            android:lines="6"
+            android:gravity="top"
+            android:autoText="true"
+            android:textColor="#000000"
+            android:background="@color/grey" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="55dip"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button android:id="@+id/btnPost"
+            style="@style/NeatButtons"
+            android:layout_width="140dip"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:text="Envoyer"
+            android:inputType="textCapWords|textNoSuggestions"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:clickable="true" />
+    </LinearLayout>
+
+</LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

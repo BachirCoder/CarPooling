@@ -1,0 +1,132 @@
+<resources>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="backgroundTint">@color/DarkSlateBlue</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" >
+
+    </style>
+
+    <style name="ListItemText">
+        <item name="android:textColor">@color/light_black</item>
+        <item name="android:textSize">@dimen/list_item_text_size</item>
+        <item name="android:layout_margin">2dp</item>
+    </style>
+
+    <style name="HeaderText">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/login_buttons_text_size</item>
+        <item name="android:layout_margin">2dp</item>
+    </style>
+
+    <style name="LoginCreateText">
+        <item name="android:textSize">@dimen/login_buttons_text_size</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_margin">2dp</item>
+    </style>
+
+    <style name="HintText">
+        <item name="android:textSize">0dp</item>
+    </style>
+
+    <style name="LoginCreateTextButton">
+        <item name="android:textSize">@dimen/login_buttons_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="FAB">
+        <item name="android:layout_margin">0dp</item>
+        <item name="fabSize">normal</item>
+        <item name="rippleColor">@android:color/white</item>
+        <item name="backgroundTint">#87CEFA</item>
+    </style>
+
+    <style name="Buttons">
+        <item name="android:layout_margin">0dp</item>
+        <item name="fabSize">normal</item>
+        <item name="rippleColor">@android:color/white</item>
+        <item name="backgroundTint">@color/deepskyblue</item>
+    </style>
+
+    <style name="CompButtons">
+        <item name="android:layout_margin">0dp</item>
+        <item name="fabSize">normal</item>
+        <item name="rippleColor">@android:color/white</item>
+        <item name="backgroundTint">#436556</item>
+    </style>
+
+    <style name="NeatButtons">
+        <item name="android:layout_margin">0dp</item>
+        <item name="fabSize">normal</item>
+        <item name="rippleColor">@android:color/white</item>
+        <item name="backgroundTint">#655643</item>
+    </style>
+
+    <style name="Info">
+        <item name="android:layout_margin">0dp</item>
+        <item name="fabSize">normal</item>
+        <item name="rippleColor">@android:color/white</item>
+        <item name="backgroundTint">#96BAC6</item>
+    </style>
+
+    <style name="TransparentButton">
+        <item name="android:layout_margin">0dp</item>
+        <item name="fabSize">normal</item>
+        <item name="rippleColor">@android:color/white</item>
+        <item name="backgroundTint">@color/lightblue</item>
+    </style>
+
+    <style name="TransButton">
+        <item name="android:layout_margin">0dp</item>
+        <item name="fabSize">normal</item>
+        <item name="rippleColor">@android:color/white</item>
+        <item name="backgroundTint">#CBDCE3</item>
+    </style>
+
+    <style name="FAB2">
+        <item name="android:layout_margin">0dp</item>
+        <item name="fabSize">normal</item>
+        <item name="rippleColor">@android:color/white</item>
+        <item name="backgroundTint">@color/primary_dark</item>
+    </style>
+
+    <style name="button">
+        <item name="android:layout_margin">0dp</item>
+        <item name="fabSize">normal</item>
+        <item name="rippleColor">@android:color/white</item>
+        <item name="backgroundTint">@color/yellowgreen</item>
+    </style>
+
+    <style name="PrimaryFlatButton" parent="Theme.AppCompat.Light">
+        <item name="android:buttonStyle">
+            @style/Widget.AppCompat.Button.Borderless.Colored
+        </item>
+        <item name="colorAccent">#FFAB40</item>
+    </style>
+
+    <style name="CustomTheme" parent="FirebaseUI">
+        <item name="colorPrimary">@color/material_green_600</item>
+        <item name="colorPrimaryDark">@color/material_green_700</item>
+        <item name="colorAccent">@color/material_purple_a700</item>
+        <item name="colorControlNormal">@color/material_green_500</item>
+        <item name="colorControlActivated">@color/material_lime_a800</item>
+        <item name="colorControlHighlight">@color/material_green_a200</item>
+        <item name="android:windowBackground">@color/material_lime_50</item>
+        <item name="colorButtonNormal">@color/material_purple_500</item>
+    </style>
+
+
+
+</resources>

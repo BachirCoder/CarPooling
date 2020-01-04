@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_marginRight="10dp"
+android:layout_marginLeft="10dp"
+android:layout_marginBottom="10dp"
+android:paddingBottom="10dp"
+android:paddingLeft="6dp"
+android:paddingRight="6dp"
+android:paddingTop="16dp"
+android:background="#EAE8EC"
+    android:layout_marginTop="66dp"
+tools:context="com.bachir.owner.blayes.DetailActivity"
+tools:showIn="@layout/activity_detail"
+android:orientation="vertical">
+
+    <ScrollView android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true" >
+
+            <LinearLayout android:id="@+id/scroll_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:orientation="horizontal" >
+        <!-- Name Label -->
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:text="De:"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="10dip"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:id="@+id/textView2" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_weight="1"
+            android:id="@+id/layDe"
+            android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_place"
+            android:paddingRight="0dip"
+            android:paddingTop="10dip"
+            android:paddingBottom="10dip"
+            android:paddingLeft="10dp"
+            android:id="@+id/imageView14" />
+
+        <TextView
+            android:id="@+id/departure"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:padding="10dip"
+            android:layout_marginRight="15dip"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:hint="Departure"
+            android:clickable="true" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:orientation="horizontal" >
+        <!-- Name Label -->
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:text="À:"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="10dip"
+            android:textSize="15sp"
+            android:textColor="#000000" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_weight="1"
+            android:id="@+id/layA"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_place"
+                android:paddingRight="0dip"
+                android:paddingTop="10dip"
+                android:paddingBottom="10dip"
+                android:paddingLeft="10dp"
+                android:id="@+id/imageView2" />
+
+        <TextView
+            android:id="@+id/destination"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:padding="10dip"
+            android:layout_marginRight="15dip"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="Destination"
+            android:clickable="true" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:orientation="horizontal" >
+        <!-- Name Label -->
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:text="Date:"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="10dip"
+            android:textSize="15sp"
+            android:textColor="#000000"
+            android:id="@+id/textView3" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_weight="1"
+            android:id="@+id/date1"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_date"
+                android:paddingRight="0dip"
+                android:paddingTop="10dip"
+                android:paddingBottom="10dip"
+                android:paddingLeft="10dp"
+                android:id="@+id/imageView1" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:padding="10dip"
+            android:layout_marginRight="0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="Date"
+            android:clickable="true"
+            />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:orientation="horizontal" >
+            <!-- Name Label -->
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:text="Horaire:"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip"
+                android:paddingLeft="15dip"
+                android:paddingRight="10dip"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:id="@+id/textView4" />
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:id="@+id/date2"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_access_time"
+                    android:paddingRight="0dip"
+                    android:paddingTop="10dip"
+                    android:paddingBottom="10dip"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/imageView12" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:padding="10dip"
+                android:layout_marginRight="15dip"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="Time"
+                android:clickable="true"
+                />
+        </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:orientation="horizontal" >
+        <!-- Name Label -->
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:text="Conducteur:"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="10dip"
+            android:textSize="15sp"
+            android:textColor="#000000" />
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:id="@+id/user"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_account"
+                    android:paddingRight="0dip"
+                    android:paddingTop="10dip"
+                    android:paddingBottom="10dip"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/imageView13" />
+
+                    <TextView
+                        android:id="@+id/driver"
+                        android:layout_weight="1"
+                        android:textSize="15sp"
+                        android:padding="10dip"
+                        android:layout_marginRight="15dip"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="Bachir Bendrissou"
+                        android:clickable="true" />
+                </LinearLayout>
+        </LinearLayout>
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:id="@+id/remRow"
+                    android:orientation="horizontal" >
+                    <!-- Name Label -->
+                    <TextView android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="2"
+                        android:text="Restantes:"
+                        android:paddingBottom="10dip"
+                        android:paddingTop="10dip"
+                        android:paddingLeft="15dip"
+                        android:paddingRight="10dip"
+                        android:textSize="15sp"
+                        android:textColor="#000000"
+                        android:id="@+id/textView" />
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dip"
+                        android:layout_weight="1"
+                        android:id="@+id/layRem"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/seat"
+                            android:paddingRight="0dip"
+                            android:paddingTop="11dip"
+                            android:paddingBottom="11dip"
+                            android:paddingLeft="10dp"
+                            android:id="@+id/imageView3" />
+
+                    <TextView
+                        android:id="@+id/rem"
+                        android:textSize="15sp"
+                        android:paddingTop="10dip"
+                        android:paddingBottom="10dip"
+                        android:paddingLeft="10dip"
+                        android:paddingRight="0dip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:text="" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:id="@+id/totalRow"
+        android:orientation="horizontal" >
+        <!-- Name Label -->
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:text="Total:"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="10dip"
+            android:textSize="15sp"
+            android:textColor="#000000" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_weight="1"
+            android:id="@+id/layTotal"
+            android:orientation="horizontal" >
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:id="@+id/laytot"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/seat"
+                    android:paddingRight="0dip"
+                    android:paddingTop="11dip"
+                    android:paddingBottom="11dip"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/imageView4" />
+        <TextView
+            android:id="@+id/total"
+            android:textSize="15sp"
+            android:paddingTop="10dip"
+            android:paddingBottom="10dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="" />
+            </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:id="@+id/bookedRow"
+        android:orientation="horizontal" >
+        <!-- Name Label -->
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:text="Réservé:"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="10dip"
+            android:textSize="15sp"
+            android:textColor="#000000" />
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_weight="1"
+            android:id="@+id/layBook"
+            android:orientation="horizontal" >
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:id="@+id/layRes"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/seat"
+                    android:paddingRight="0dip"
+                    android:paddingTop="11dip"
+                    android:paddingBottom="11dip"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/imageView5" />
+
+            <TextView
+                android:id="@+id/booked"
+                android:textSize="15sp"
+                android:paddingTop="10dip"
+                android:paddingBottom="10dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="0dip"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:orientation="horizontal" >
+
+
+                    <!-- Name Label -->
+                    <TextView android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="2"
+                        android:text="Prix:"
+                        android:paddingBottom="10dip"
+                        android:paddingTop="10dip"
+                        android:paddingLeft="15dip"
+                        android:paddingRight="10dip"
+                        android:textSize="15sp"
+                        android:textColor="#000000" />
+
+                    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dip"
+                        android:layout_weight="1"
+                        android:id="@+id/price1"
+                        android:orientation="horizontal" >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_attach_money"
+                        android:paddingRight="0dip"
+                        android:paddingTop="10dip"
+                        android:paddingBottom="10dip"
+                        android:paddingLeft="10dp"
+                        android:id="@+id/imageView131" />
+
+                    <TextView
+                        android:id="@+id/price"
+                        android:layout_weight="1"
+                        android:textSize="15sp"
+                        android:padding="10dip"
+                        android:layout_marginRight="15dip"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="Price"
+                        android:clickable="true" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:visibility="gone"
+                    android:orientation="horizontal" >
+                    <!-- Name Label -->
+                    <TextView android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="2"
+                        android:text="Contact:"
+                        android:paddingBottom="10dip"
+                        android:paddingTop="10dip"
+                        android:paddingLeft="15dip"
+                        android:paddingRight="10dip"
+                        android:textSize="15sp"
+                        android:textColor="#000000" />
+                    <TextView
+                        android:id="@+id/contact"
+                        android:layout_weight="1"
+                        android:textSize="15sp"
+                        android:padding="10dip"
+                        android:layout_marginRight="15dip"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="Contact No"
+                        android:clickable="true" />
+                </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <!-- Input description -->
+        <TextView android:id="@+id/details"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginLeft="15dip"
+            android:lines="4"
+            android:inputType="textCapSentences|textMultiLine|textNoSuggestions"
+            android:gravity="top"
+            android:autoText="true"
+            android:text="More Info .."
+            android:background="#D5D0D8" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/buttons"
+        android:paddingRight="13dip"
+        android:paddingLeft="13dip"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button android:id="@+id/btnBook"
+            style="@style/NeatButtons"
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:text="Réserver"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:inputType="textCapWords|textNoSuggestions"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="55dip"
+            android:layout_marginLeft="3dip"
+            android:layout_marginRight="3dip"
+            android:layout_marginTop="5dip"
+            android:layout_marginBottom="5dip"
+            android:text="Le chauffeur n'a pas encore confirmé votre réservation."
+            android:background="@color/aqua"
+            android:gravity="center"
+            android:textSize="15dip"
+            android:visibility="gone"
+            android:clickable="true" />
+
+        <Button android:id="@+id/btnCancel"
+            style="@style/CompButtons"
+            android:layout_width="match_parent"
+            android:layout_height="55dip"
+            android:text="Annuler votre demande"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:inputType="textCapWords|textNoSuggestions"
+            android:visibility="gone"
+            android:clickable="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dip"
+            android:orientation="horizontal"
+            android:id="@+id/disableCall"
+            android:gravity="center">
+
+
+            <Button android:id="@+id/btnCall"
+                style="@style/TransButton"
+                android:layout_width="match_parent"
+                android:layout_height="55dip"
+                android:layout_marginRight="10dip"
+                android:layout_weight="1"
+                android:text="Appeler"
+                android:drawableLeft="@android:drawable/stat_sys_phone_call"
+                android:gravity="center"
+                android:textSize="17sp"
+                android:inputType="textCapWords|textNoSuggestions"
+                android:clickable="true" />
+
+            <Button android:id="@+id/btnSms"
+                style="@style/TransButton"
+                android:layout_width="match_parent"
+                android:layout_height="55dip"
+                android:layout_marginLeft="10dip"
+                android:layout_weight="1"
+                android:text="Sms"
+                android:drawableLeft="@android:drawable/sym_action_chat"
+                android:gravity="center"
+                android:textSize="17sp"
+                android:inputType="textCapWords|textNoSuggestions"
+
+                android:clickable="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dip"
+            android:orientation="horizontal"
+            android:id="@+id/enableCall"
+            android:visibility="gone"
+            android:gravity="center">
+
+
+            <Button android:id="@+id/btnCall2"
+                style="@style/CompButtons"
+                android:layout_width="match_parent"
+                android:layout_height="55dip"
+                android:layout_marginRight="10dip"
+                android:layout_weight="1"
+                android:text="Appeler"
+                android:drawableLeft="@android:drawable/stat_sys_phone_call"
+                android:gravity="center"
+                android:textSize="17sp"
+                android:inputType="textCapWords|textNoSuggestions"
+                android:clickable="true" />
+
+            <Button android:id="@+id/btnSms2"
+                style="@style/CompButtons"
+                android:layout_width="match_parent"
+                android:layout_height="55dip"
+                android:layout_marginLeft="10dip"
+                android:layout_weight="1"
+                android:text="Sms"
+                android:drawableLeft="@android:drawable/sym_action_chat"
+                android:gravity="center"
+                android:textSize="17sp"
+                android:inputType="textCapWords|textNoSuggestions"
+
+                android:clickable="true" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+                <TextView android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/penTitle"
+                    android:text="Aucune demande."
+                    android:visibility="gone"
+                    android:paddingBottom="0dip"
+                    android:paddingTop="10dip"
+                    android:paddingLeft="15dip"
+                    android:paddingRight="10dip"
+                    android:textSize="15sp"
+                    android:textColor="#000000" />
+
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dip"
+                    android:id="@+id/penList"
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rv1"
+                        android:padding="0dp"
+                        android:background="#EAE8EC"        />
+                </LinearLayout>
+
+
+                <TextView android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/bookTitle"
+                    android:text="No bookings made."
+                    android:visibility="gone"
+                    android:paddingTop="10dip"
+                    android:paddingLeft="15dip"
+                    android:paddingRight="10dip"
+                    android:paddingBottom="0dp"
+                    android:textSize="15sp"
+                    android:textColor="#000000" />
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dip"
+                    android:id="@+id/bookList"
+                    android:visibility="gone"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rv2"
+                        android:padding="0dp"
+                        android:background="#EAE8EC"        />
+                </LinearLayout>
+
+            </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

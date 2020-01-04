@@ -1,0 +1,128 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Search">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#564365"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="36dp"
+        android:background="@android:color/white"
+        android:layout_marginTop="?attr/actionBarSize"
+        tools:context="com.bachir.owner.blayes.Search"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dip"
+            android:orientation="horizontal" >
+            <!-- Name Label -->
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:text="De:"
+                android:padding="13sp"
+                android:textSize="15sp"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/dep"
+                android:layout_weight="1"
+                style="@style/CompButtons"
+                android:layout_marginRight="10dip"
+                android:layout_width="fill_parent"
+                android:layout_gravity="center"
+                android:layout_height="50dip"
+                android:text="Départ"
+                android:textSize="17sp"
+                android:inputType="textCapWords|textNoSuggestions"
+                android:clickable="true" />
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:layout_marginBottom="10dip"
+            android:orientation="horizontal" >
+            <!-- Name Label -->
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:text="À:"
+                android:padding="13sp"
+                android:textSize="15sp"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/des"
+                android:layout_weight="1"
+                android:textSize="17sp"
+                style="@style/CompButtons"
+                android:layout_marginRight="10dip"
+                android:layout_width="fill_parent"
+                android:layout_gravity="center"
+                android:layout_height="50dip"
+                android:text="Destination"
+                android:inputType="textCapWords|textNoSuggestions"
+                android:clickable="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:padding="13dip"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button android:id="@+id/search"
+                style="@style/NeatButtons"
+                android:layout_width="match_parent"
+                android:layout_height="55dip"
+                android:layout_weight="1"
+                android:text="Chercher"
+                android:drawableLeft="@drawable/ic_search_black"
+                android:gravity="center"
+                android:textSize="17sp"
+                android:inputType="textCapWords|textNoSuggestions"
+                android:clickable="true" />
+
+            <Button android:id="@+id/cancel"
+                style="@style/NeatButtons"
+                android:layout_width="match_parent"
+                android:layout_height="55dip"
+                android:layout_weight="1"
+                android:text="Annuler"
+                android:gravity="center"
+                android:textSize="17sp"
+                android:inputType="textCapWords|textNoSuggestions"
+                android:clickable="true" />
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
